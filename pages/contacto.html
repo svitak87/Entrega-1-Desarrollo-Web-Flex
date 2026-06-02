@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Oscar Fajardo</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./sobreMi.html">Sobre mí</a></li>
+                <li><a href="./servicios.html">Servicios</a></li>
+                <li><a href="./proyectos.html">Proyectos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>Contacto</h1>
+            <p>Si deseas ponerte en contacto conmigo, por favor utiliza los siguientes medios:</p>
+            <ul>
+                <li>Email: oscar.fajardo@example.com</li>
+                <li>Teléfono: +54 11 1234-5678</li>
+                <li>Dirección: Av. Siempre Viva 123, Ciudad, País</li>
+            </ul>
+            <form action="mailto:oscar.fajardo@example.com" method="post" enctype="text/plain">
+                <h2>Podés enviarme un mensaje en este formulario</h2>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+</html>
