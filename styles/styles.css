@@ -1,28 +1,129 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+/* =========================
+   Reset
+========================= */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* =========================
+   Variables
+========================= */
+
 :root {
-  --primary-color: hsl(210, 53%, 18%);
-  --secondary-color: hsl(132, 58%, 54%);
-  --bg-light: hsl(210, 30%, 95%);
+    --primary-color: hsl(210, 53%, 18%);
+    --secondary-color: hsl(132, 58%, 54%);
+    --bg-light: hsl(210, 30%, 95%);
 }
+
+/* =========================
+   Estilos Generales
+========================= */
 
 body {
     font-family: 'Inter', sans-serif;
     background-color: var(--bg-light);
     color: var(--primary-color);
     line-height: 1.6;
+    min-height: 100vh;
 }
 
-nav ul{
+/* =========================
+   Tipografía
+========================= */
+
+h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    line-height: 2.9rem;
+    text-align: right;
+}
+
+h2 {
+    font-size: 2.25rem;
+    font-weight: 600;
+    margin: 3rem 0 1rem 0;
+    line-height: 2rem;
+}
+
+h3 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    line-height: 1.6rem;
+}
+
+h4 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+h6{
+    font-size: 0.75rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+a {
+    color: var(--bg-light);
     text-decoration: none;
+    font-size: 1rem;
+}
+
+li{
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
     list-style: none;
 }
+
+/* =========================
+   Navegación
+========================= */
+.header-container{
+    width: 100%;
+}
+.nav-container{
+    display: flex;
+    justify-content: right;
+    background-color: var(--primary-color);
+    color: var(--bg-light)
+}
+.nav-list {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding: 1rem;
+    color: var(--bg-light);
+    text-decoration: none;
+}
+
+.nav-list a {
+    color: var(--bg-light);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.nav-list a:hover {
+    color: var(--secondary-color);
+}
+
+
+/* =========================
+   Botones
+========================= */
 
 button {
     background-color: var(--secondary-color);
@@ -31,4 +132,139 @@ button {
     padding: 10px 20px;
     cursor: pointer;
     border-radius: 5px;
+}
+
+/* =========================
+   Espaciado General
+========================= */
+
+section {
+    margin-bottom: 2rem;
+    padding: 1rem;
+}
+
+header nav {
+    display: flex;
+}
+
+main {
+    padding: 1rem 0;
+}
+
+.skills-list {
+    flex-wrap: wrap;
+    display: flex;
+    list-style: none;
+    padding: 0;
+    gap: 0.50rem;
+    line-height: 0.1rem;
+    margin: 2rem 0 2rem 0;
+}
+
+/* =========================
+    Imágenes
+========================= */
+
+.image-section{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+/* =========================
+    sección de contacto
+========================= */
+.contact-info{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    line-height: 1rem;
+    margin: 1.75rem 0 2rem 0;
+    padding: 0.11rem;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    margin: 0.8rem 0 0.8rem 0;
+}
+
+input, textarea {
+    border: none;
+    padding: 0.5rem;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    border-radius: 5px;
+}
+
+input:focus, textarea:focus    {
+    content: '';
+    display: block;
+    border: 3px solid var(--primary-color);
+    margin-top: 0.5rem;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+    width: 100%;
+}
+
+.submit-btn {
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+/* =========================
+    footer
+========================= */
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--bg-light);
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.copyright {
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+/* responsive design */
+@media (min-width: 768px) {
+    h1 {
+        font-size: 3.5rem;
+        text-align: left;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 0.875rem;
+    }
+
+    .contact-info{
+        text-align: left;
+    }
+
+    .nav-list {
+        width: 50%;
+    }
 }

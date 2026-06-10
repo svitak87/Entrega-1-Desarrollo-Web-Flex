@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/styles.css">
     <title>Contacto - Oscar Fajardo</title>
 </head>
+
 <body>
     <header>
-        <nav>
-            <ul>
+        <nav class="nav-container">
+            <ul class="nav-list">
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="./sobreMi.html">Sobre mí</a></li>
                 <li><a href="./servicios.html">Servicios</a></li>
@@ -21,36 +23,52 @@
         <section>
             <h1>Contacto</h1>
             <p>Si deseas ponerte en contacto conmigo, por favor utiliza los siguientes medios:</p>
-            <ul>
+            <ul class="contact-info">
                 <li>Email: oscar.fajardo@example.com</li>
                 <li>Teléfono: +54 11 1234-5678</li>
                 <li>Dirección: Av. Siempre Viva 123, Ciudad, País</li>
             </ul>
             <form action="mailto:oscar.fajardo@example.com" method="post" enctype="text/plain">
                 <h2>Podés enviarme un mensaje en este formulario</h2>
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje" required></textarea>
-                <button type="submit">Enviar</button>
+
+                <fieldset>
+                    <legend>Información de contacto</legend>
+                    <div class="form-group">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="apellido">Apellido:</label>
+                        <input type="text" id="apellido" name="apellido" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Escribe tu mensaje</legend>
+                    <textarea id="mensaje" name="mensaje" required></textarea>
+                </fieldset>
+
+                <button type="submit" class="submit-btn">Enviar</button>
             </form>
         </section>
-        <section>
+        <section class="image-section">
             <figure>
-                <img src="../assets/renné renné le filmer.png"
-                    alt="Full Stack Web Developer">
+                <img src="../assets/renné-renné-le-filmer.png" alt="Full Stack Web Developer">
                 <figcaption>Desarrollador Web Full Stack</figcaption>
             </figure>
         </section>
     </main>
-      <footer>
-        <h4>Estas son las redes sociales en las que me puedes seguir</h4>
+    <footer>
+        <h6>Estas son las redes sociales en las que me puedes seguir</h6>
         <div>
             <a href="https://www.facebook.com/ofajardofajardo/" target="_blank">Facebook</a>
             <a href="https://www.linkedin.com/in/ofajardofajardo/" target="_blank">LinkedIn</a>
         </div>
-        <p>&copy; 2024 Mi Sitio Web. Todos los derechos reservados.</p>
+        <p class="copyright">&copy; 2024 Mi Sitio Web. Todos los derechos reservados.</p>
     </footer>
+
 </html>
