@@ -64,7 +64,7 @@ h4 {
     margin-bottom: 0.5rem;
 }
 
-h6{
+h6 {
     font-size: 0.75rem;
     font-weight: 400;
     margin-bottom: 1rem;
@@ -83,16 +83,81 @@ a {
     font-size: 1rem;
 }
 
-li{
+li {
     font-size: 1rem;
     margin-bottom: 0.5rem;
     list-style: none;
 }
 
+
 /* =========================
-   Navegación
+Configuración Grid
+===========================*/
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+    min-height: 100vh;
+}
+
+/* Áreas principales */
+.header-container {
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.main-container {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas:
+        "hero hero"
+        "skills image";
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.footer-container {
+    grid-area: footer;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Subgrid dentro del main */
+.hero {
+    grid-area: hero;
+}
+
+.skills {
+    grid-area: skills;
+}
+
+.image-section {
+    grid-area: image;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Skills list */
+.skills-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 0.5rem;
+}
+
+/* =========================
+   Navegación (navbar)
 ========================= */
-.header-container{
+.header-container {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -101,18 +166,20 @@ li{
     background-color: var(--primary-color);
 }
 
-.logo{
-    width: 70px;
+.logo {
+    width: 2.5rem;
     flex-shrink: 0;
     margin-left: 10px;
 }
-.nav-container{
+
+.nav-container {
     display: flex;
     justify-content: right;
     align-items: center;
     width: 100%;
 
 }
+
 .nav-list {
     display: flex;
     flex-direction: row;
@@ -121,13 +188,15 @@ li{
     padding: 1rem;
     color: var(--bg-light);
     text-decoration: none;
-    gap:20px
+    gap: 10px;
+    font-size: 0.1rem;
 }
 
 .nav-list a {
     color: var(--bg-light);
     text-decoration: none;
     font-weight: 500;
+    font-size: 0.9rem;
 }
 
 .nav-list a:hover {
@@ -166,7 +235,7 @@ main {
     Imágenes
 ========================= */
 
-.image-section{
+.image-section {
     display: flex;
     justify-content: center;
     margin-top: 2rem;
@@ -177,10 +246,33 @@ img {
     height: auto;
     display: block;
 }
+
+/* =========================
+    sección de proyectos
+========================= */
+.proyecto {
+    background: white;
+    padding: 1rem;
+    border-radius: 10px;
+    height: 100%;
+    margin-bottom: 1rem;
+}
+
+/* =========================
+    sección de servicios
+========================= */
+.servicio {
+    background: white;
+    padding: 1rem;
+    border-radius: 10px;
+    height: 100%;
+    margin-bottom: 1rem;
+}
+
 /* =========================
     sección de contacto
 ========================= */
-.contact-info{
+.contact-info {
     display: flex;
     flex-direction: column;
     text-align: right;
@@ -189,13 +281,14 @@ img {
     padding: 0.11rem;
 }
 
-.form-group{
+.form-group {
     display: flex;
     flex-direction: column;
     margin: 0.8rem 0 0.8rem 0;
 }
 
-input, textarea {
+input,
+textarea {
     border: none;
     padding: 0.5rem;
     font-size: 1rem;
@@ -203,7 +296,8 @@ input, textarea {
     border-radius: 5px;
 }
 
-input:focus, textarea:focus    {
+input:focus,
+textarea:focus {
     content: '';
     display: block;
     border: 3px solid var(--primary-color);
@@ -266,11 +360,33 @@ footer {
         font-size: 0.875rem;
     }
 
-    .contact-info{
+    .contact-info {
         text-align: left;
     }
 
     .nav-list {
-        width: 50%;
+        width: 70%;
+    }
+
+    .nav-list a {
+        font-size: 1rem;
+    }
+
+    /* Seccion proyectos */
+    .proyectos-grid, 
+    .services-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        align-items: start;
+        gap: 20px;
+
+    }
+
+}
+
+@media (min-width: 1024px) {
+    .proyectos-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1rem;
     }
 }
