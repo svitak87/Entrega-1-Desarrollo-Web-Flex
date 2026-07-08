@@ -4,24 +4,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/styles.css">
     <title>Contacto - Oscar Fajardo</title>
 </head>
 
 <body>
     <header class="header-container">
-        <img src="../assets/logo.png" alt="logo-developers" class="logo">
-        <nav class="nav-container">
-            <ul class="nav-list">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./sobreMi.html">Sobre mí</a></li>
-                <li><a href="./servicios.html">Servicios</a></li>
-                <li><a href="./proyectos.html">Proyectos</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-md">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../assets/logo.png" alt="logo-developers" class="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./proyectos.html">Proyectos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./sobreMi.html">Sobre mi</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
-        <section>
+        <section class="contact-container">
             <h1>Contacto</h1>
             <p>Si deseas ponerte en contacto conmigo, por favor utiliza los siguientes medios:</p>
             <ul class="contact-info">
@@ -29,38 +49,25 @@
                 <li>Teléfono: +54 11 1234-5678</li>
                 <li>Dirección: Av. Siempre Viva 123, Ciudad, País</li>
             </ul>
-            <form action="mailto:oscar.fajardo@example.com" method="post" enctype="text/plain">
-                <h2>Podés enviarme un mensaje en este formulario</h2>
-
-                <fieldset>
-                    <legend>Información de contacto</legend>
-                    <div class="form-group">
-                        <label for="nombre">Nombre:</label>
-                        <input type="text" id="nombre" name="nombre" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="apellido">Apellido:</label>
-                        <input type="text" id="apellido" name="apellido" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                </fieldset>
-
-                <fieldset>
-                    <legend>Escribe tu mensaje</legend>
-                    <textarea id="mensaje" name="mensaje" required></textarea>
-                </fieldset>
-
-                <button type="submit" class="submit-btn">Enviar</button>
+            <form>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Apellido</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" class="form-control" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
             </form>
-        </section>
-        <section class="image-section">
-            <figure>
-                <img src="../assets/renné-renné-le-filmer.png" alt="Full Stack Web Developer">
-                <figcaption>Desarrollador Web Full Stack</figcaption>
-            </figure>
         </section>
     </main>
     <footer>
@@ -71,5 +78,9 @@
         </div>
         <p class="copyright">&copy; 2024 Mi Sitio Web. Todos los derechos reservados.</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
 
 </html>
