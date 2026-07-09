@@ -16,7 +16,7 @@ https://svitak87.github.io/Entrega-1-Desarrollo-Web-Flex/index.html
 
 ## 📸 Vista previa
 
-![Vista previa del proyecto](../Entrega-1-Desarrollo-Web-Flex/assets/vista-previa.png)
+![Vista previa del proyecto](./assets/vista-previa.png)
 
 
 ## 📁 Estructura del proyecto
