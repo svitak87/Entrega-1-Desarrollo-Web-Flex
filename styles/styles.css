@@ -112,17 +112,17 @@ Configuración Grid
     background-color: var(--primary-color);
 }
 
-.navbar-toggler{
+.navbar-toggler {
     background-color: var(--bg-light);
 }
 
-.nav-link{
+.nav-link {
     color: var(--bg-light);
 }
 
- .nav-link:hover{
+.nav-link:hover {
     color: var(--secondary-color);
- }
+}
 
 .main-container {
     grid-area: main;
@@ -225,6 +225,13 @@ img {
 /* =========================
     sección de servicios
 ========================= */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+   
+}
+
 .servicio {
     background: white;
     padding: 1rem;
@@ -233,6 +240,12 @@ img {
     margin-bottom: 1rem;
 }
 
+.carousel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
 /* =========================
     sección de contacto
 ========================= */
@@ -284,10 +297,6 @@ textarea {
     margin-top: 1rem;
 }
 
-/* button:hover {
-    background-color: var(--secondary-color);
-} */
-
 
 /* =========================
     footer
@@ -336,18 +345,18 @@ footer {
         font-size: 1rem;
     }
 
-    .contact-container{
+    .contact-container {
         margin: 2rem auto;
         width: 50%;
     }
 
-    .carousel-inner{
+    .carousel-inner {
         margin: 20px auto;
         width: 50%;
         border: 1px solid var(--primary-color);
     }
 
-    .carousel-item{
+    .carousel-item {
         width: 100%;
     }
 
@@ -357,6 +366,3 @@ footer {
     }
 
 }
-
-
-
