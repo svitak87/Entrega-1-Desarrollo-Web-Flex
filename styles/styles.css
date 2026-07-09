@@ -127,12 +127,13 @@ Configuración Grid
 .main-container {
     grid-area: main;
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-areas:
-        "hero hero"
-        "skills image";
-    gap: 2rem;
-    padding: 2rem;
+        "hero"
+        "skills"
+        "image";
+    gap: 1rem;
+    padding: 1rem;
 }
 
 .footer-container {
@@ -229,7 +230,7 @@ img {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1rem;
-   
+
 }
 
 .servicio {
@@ -240,12 +241,13 @@ img {
     margin-bottom: 1rem;
 }
 
-.carousel{
+.carousel {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
 }
+
 /* =========================
     sección de contacto
 ========================= */
@@ -339,6 +341,15 @@ footer {
 
     .nav-list {
         width: 70%;
+    }
+
+    .main-container {
+        grid-template-columns: 2fr 1fr;
+        grid-template-areas:
+            "hero hero"
+            "skills image";
+        gap: 2rem;
+        padding: 2rem;
     }
 
     .nav-list a {
