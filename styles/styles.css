@@ -151,19 +151,12 @@ Configuración Grid
     grid-area: skills;
 }
 
-.image-section {
+/* .image-section {
     grid-area: image;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-/* Skills list */
-.skills-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 0.5rem;
-}
+} */
 
 /* =========================
    Navegación (navbar)
@@ -186,10 +179,6 @@ Configuración Grid
 section {
     margin-bottom: 2rem;
     padding: 1rem;
-}
-
-header nav {
-    display: flex;
 }
 
 main {
@@ -277,8 +266,6 @@ textarea {
 
 input:focus,
 textarea:focus {
-    content: '';
-    display: block;
     border: 3px solid var(--primary-color);
     margin-top: 0.5rem;
 }
