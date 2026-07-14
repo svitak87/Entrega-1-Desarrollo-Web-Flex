@@ -1,0 +1,23 @@
+.image-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+  .profile-image {
+    width: 100%;
+    max-width: 500px;
+    margin: 0;
+    .layout-image {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+    figcaption {
+      margin-top: 0.75rem;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+  }
+}

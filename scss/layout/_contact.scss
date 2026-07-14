@@ -1,0 +1,15 @@
+@use '../utilities/variables';
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  margin-top: 50px;
+}
+
+.btn {
+  background-color: variables.$primary-color;
+  border: none;
+  &:hover {
+    background-color: variables.$secondary-color;
+  }
+}

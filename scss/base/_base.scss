@@ -1,0 +1,50 @@
+@use '../utilities/variables';
+//reset
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+//etiquetas contenedoras
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: variables.$bg-light;
+  color: variables.$primary-color;
+  font-family: variables.$font-family-primary;
+  line-height: 1.6;
+  min-height: 100vh;
+  padding-right: 2px;
+}
+
+
+//section
+section {
+  padding: 25px;
+}
+
+//main
+main {
+  margin: 50px auto;
+  flex: 1;
+}
+
+//article
+article {
+  margin: 30px auto;
+}
+
+//footer
+footer {
+  background-color: variables.$primary-color;
+  color: variables.$bg-light;
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+}
+
+//ul
+ul {
+  list-style: none;
+}

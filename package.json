@@ -1,0 +1,25 @@
+{
+  "name": "entrega-1-desarrollo-web-flex",
+  "version": "1.0.0",
+  "description": "Proyecto desarrollado con **HTML**, **CSS** y **Bootstrap** que presenta mi portafolio personal, incluyendo información sobre mí, habilidades, proyectos y formas de contacto.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch scss/main.scss styles/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/svitak87/Entrega-1-Desarrollo-Web-Flex.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/svitak87/Entrega-1-Desarrollo-Web-Flex/issues"
+  },
+  "homepage": "https://github.com/svitak87/Entrega-1-Desarrollo-Web-Flex#readme",
+  "devDependencies": {
+    "sass": "^1.101.0"
+  }
+}

@@ -1,0 +1,23 @@
+@mixin card(
+  $background: white,
+  $padding: 1.5rem,
+  $radius: 10px,
+  $shadow: 0 2px 8px rgba(0, 0, 0, .15)
+) {
+  background-color: $background;
+  padding: $padding;
+  border-radius: $radius;
+  box-shadow: $shadow;
+}
+
+@mixin typography(
+  $size,
+  $weight,
+  $spacing: normal,
+  $line-height: normal
+) {
+  font-size: $size;
+  font-weight: $weight;
+  letter-spacing: $spacing;
+  line-height: $line-height;
+}
