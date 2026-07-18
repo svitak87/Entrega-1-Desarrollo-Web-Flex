@@ -1,9 +1,51 @@
-@use '../utilities/variables';
+@use "../utilities/variables";
+
 .contact-info {
   display: flex;
   flex-direction: column;
   text-align: right;
   margin-top: 50px;
+}
+
+.form-group-custom {
+  position: relative;
+  width: 100%;
+
+  .form-control {
+    width: 100%;
+    padding: 1.2rem 0.75rem 0.5rem;
+    font-size: 1rem;
+    border: 1px solid variables.$primary-color;
+    border-radius: 4px;
+    outline: none;
+    background: #fff;
+  }
+
+  .form-label {
+    position: absolute;
+    left: 0.75rem;
+    top: 50%;
+    transform: translateY(-50%);
+    background: variables.$hover-color;
+    color: variables.$primary-color;
+    padding: 0 1rem;
+    pointer-events: none;
+    transition: all 0.25s ease;
+  }
+
+  .form-control:focus + .form-label,
+  .form-control:not(:placeholder-shown) + .form-label {
+    top: 0;
+    transform: translateY(-50%);
+    font-size: 1rem;
+    color: variables.$primary-color;
+
+  }
+
+  .form-control:focus {
+    border-color: variables.$primary-color;
+    box-shadow: 0 0 0 0.2rem rgba(228, 235, 247, 0.15);
+  }
 }
 
 .btn {

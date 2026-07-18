@@ -66,41 +66,51 @@
           <li>Teléfono: +54 11 1234-5678</li>
           <li>Dirección: Av. Siempre Viva 123, Ciudad, País</li>
         </ul>
-        <form>
-          <div class="mb-3">
-            <label class="form-label">Nombre</label>
+        <form class="contact-form">
+          <div class="mb-3 form-group-custom">
             <input
               type="text"
+              id="nombre"
               class="form-control"
-              aria-describedby="emailHelp"
+              placeholder=" "
+              required
             />
+            <label for="nombre" class="form-label">Nombre</label>
           </div>
-          <div class="mb-3">
-            <label class="form-label">Apellido</label>
+
+          <div class="mb-3 form-group-custom">
             <input
               type="text"
+              id="apellido"
               class="form-control"
-              aria-describedby="emailHelp"
+              placeholder=" "
+              required
             />
+            <label for="apellido" class="form-label">Apellido</label>
           </div>
-          <div class="mb-3">
-            <label class="form-label">Email</label>
+
+          <div class="mb-3 form-group-custom">
             <input
               type="email"
+              id="email"
               class="form-control"
-              aria-describedby="emailHelp"
+              placeholder=" "
+              required
             />
+            <label for="email" class="form-label">Email</label>
           </div>
-          <div class="mb-3">
-            <label class="form-label">Mensaje</label>
+
+          <div class="mb-3 form-group-custom">
             <textarea
               id="mensaje"
-              name="mensaje"
               class="form-control"
-              rows="4"
+              rows="5"
+              placeholder="Escribe tu mensaje..."
               required
             ></textarea>
+            <!-- <label for="mensaje" class="form-label">Mensaje</label> -->
           </div>
+
           <button type="submit" class="btn btn-primary">Enviar</button>
         </form>
       </section>

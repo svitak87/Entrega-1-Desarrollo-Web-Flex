@@ -7,7 +7,7 @@
 body {
   display: flex;
   flex-direction: column;
-  background-color: hsl(0, 0%, 77%);
+  background-color: hsl(0, 0%, 95%);
   color: hsl(210, 52%, 18%);
   font-family: "Inter", sans-serif;
   line-height: 1.6;
@@ -30,7 +30,7 @@ article {
 
 footer {
   background-color: hsl(210, 52%, 18%);
-  color: hsl(0, 0%, 77%);
+  color: hsl(0, 0%, 95%);
   text-align: center;
   padding: 20px;
   width: 100%;
@@ -38,6 +38,10 @@ footer {
 
 ul {
   list-style: none;
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px white inset;
 }
 
 h1 {
@@ -70,7 +74,7 @@ p {
 
 a {
   text-decoration: none;
-  color: hsl(0, 0%, 77%);
+  color: hsl(0, 0%, 95%);
 }
 a:hover {
   color: hsl(132, 58%, 54%);
@@ -86,14 +90,14 @@ a:hover {
   margin-left: 10px;
 }
 .header-container .navbar-toggler {
-  background-color: hsl(0, 0%, 77%);
+  background-color: hsl(0, 0%, 95%);
 }
 .header-container .navbar-toggler:hover {
   background-color: hsl(132, 58%, 54%);
   color: hsl(0, 0%, 100%);
 }
 .header-container .nav-link {
-  color: hsl(0, 0%, 77%);
+  color: hsl(0, 0%, 95%);
 }
 .header-container .nav-link:hover {
   color: hsl(132, 58%, 54%);
@@ -133,6 +137,42 @@ a:hover {
   flex-direction: column;
   text-align: right;
   margin-top: 50px;
+}
+
+.form-group-custom {
+  position: relative;
+  width: 100%;
+}
+.form-group-custom .form-control {
+  width: 100%;
+  padding: 1.2rem 0.75rem 0.5rem;
+  font-size: 1rem;
+  border: 1px solid hsl(210, 52%, 18%);
+  border-radius: 4px;
+  outline: none;
+  background: #fff;
+}
+.form-group-custom .form-label {
+  position: absolute;
+  left: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background: hsl(0, 0%, 100%);
+  color: hsl(210, 52%, 18%);
+  padding: 0 1rem;
+  pointer-events: none;
+  transition: all 0.25s ease;
+}
+.form-group-custom .form-control:focus + .form-label,
+.form-group-custom .form-control:not(:placeholder-shown) + .form-label {
+  top: 0;
+  transform: translateY(-50%);
+  font-size: 1rem;
+  color: hsl(210, 52%, 18%);
+}
+.form-group-custom .form-control:focus {
+  border-color: hsl(210, 52%, 18%);
+  box-shadow: 0 0 0 0.2rem rgba(228, 235, 247, 0.15);
 }
 
 .btn {
