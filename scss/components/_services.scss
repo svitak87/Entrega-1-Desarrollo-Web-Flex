@@ -1,15 +1,27 @@
 @use "../utilities/mixins";
+@use "../utilities/variables";
 
 .portfolio-card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 1rem;
   height: auto;
   align-items: stretch;
+  margin: 40px auto;
   .portfolio-card {
     @include mixins.card();
-    height: 80%;
+    height: 100%;
   }
 }
+
+body.dark .portfolio-card {
+  background: variables.$dark-bg-color;
+  color: variables.$bg-light;
+  border: 1px solid variables.$dark-boder-color;
+  box-shadow: 0 10px 20px rgba(0,0,0,.35);
+  transition: .3s;
+}
+
+
 
 

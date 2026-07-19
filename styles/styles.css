@@ -2,17 +2,22 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scrollbar-width: thin;
 }
 
 body {
   display: flex;
   flex-direction: column;
-  background-color: hsl(0, 0%, 95%);
-  color: hsl(210, 52%, 18%);
+  min-height: 100vh;
   font-family: "Inter", sans-serif;
   line-height: 1.6;
-  min-height: 100vh;
-  padding-right: 2px;
+  background-color: hsl(0, 0%, 95%);
+  color: hsl(209, 86%, 6%);
+}
+
+body.dark {
+  background-color: hsl(209, 86%, 6%);
+  color: hsl(0, 0%, 95%);
 }
 
 section {
@@ -20,16 +25,12 @@ section {
 }
 
 main {
-  margin: 50px auto;
   flex: 1;
-}
-
-article {
-  margin: 30px auto;
+  margin: 50px auto;
 }
 
 footer {
-  background-color: hsl(210, 52%, 18%);
+  background: hsl(209, 86%, 6%);
   color: hsl(0, 0%, 95%);
   text-align: center;
   padding: 20px;
@@ -81,7 +82,7 @@ a:hover {
 }
 
 .header-container {
-  background-color: hsl(210, 52%, 18%);
+  background-color: hsl(209, 86%, 6%);
   width: 100%;
 }
 .header-container .logo {
@@ -101,6 +102,10 @@ a:hover {
 }
 .header-container .nav-link:hover {
   color: hsl(132, 58%, 54%);
+}
+
+body.dark header {
+  background: #000;
 }
 
 .image-section {
@@ -132,6 +137,10 @@ a:hover {
   font-size: 0.8rem;
 }
 
+body.dark footer {
+  background: #000;
+}
+
 .contact-info {
   display: flex;
   flex-direction: column;
@@ -147,7 +156,7 @@ a:hover {
   width: 100%;
   padding: 1.2rem 0.75rem 0.5rem;
   font-size: 1rem;
-  border: 1px solid hsl(210, 52%, 18%);
+  border: 1px solid hsl(209, 86%, 6%);
   border-radius: 4px;
   outline: none;
   background: #fff;
@@ -158,7 +167,7 @@ a:hover {
   top: 50%;
   transform: translateY(-50%);
   background: hsl(0, 0%, 100%);
-  color: hsl(210, 52%, 18%);
+  color: hsl(209, 86%, 6%);
   padding: 0 1rem;
   pointer-events: none;
   transition: all 0.25s ease;
@@ -168,15 +177,15 @@ a:hover {
   top: 0;
   transform: translateY(-50%);
   font-size: 1rem;
-  color: hsl(210, 52%, 18%);
+  color: hsl(209, 86%, 6%);
 }
 .form-group-custom .form-control:focus {
-  border-color: hsl(210, 52%, 18%);
+  border-color: hsl(209, 86%, 6%);
   box-shadow: 0 0 0 0.2rem rgba(228, 235, 247, 0.15);
 }
 
 .btn {
-  background-color: hsl(210, 52%, 18%);
+  background-color: hsl(209, 86%, 6%);
   border: none;
 }
 .btn:hover {
@@ -195,17 +204,26 @@ a:hover {
 
 .portfolio-card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 1rem;
   height: auto;
   align-items: stretch;
+  margin: 40px auto;
 }
 .portfolio-card-grid .portfolio-card {
   background-color: white;
   padding: 1.5rem;
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-  height: 80%;
+  height: 100%;
+}
+
+body.dark .portfolio-card {
+  background: hsl(215, 21%, 11%);
+  color: hsl(0, 0%, 95%);
+  border: 1px solid hsl(212, 12%, 21%);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.35);
+  transition: 0.3s;
 }
 
 @media (min-width: 768px) {
