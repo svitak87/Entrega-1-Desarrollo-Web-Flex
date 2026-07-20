@@ -1,11 +1,16 @@
 const btn = document.getElementById("toggle");
+const icon = document.getElementById("theme-icon");
+const assetsPath = window.location.pathname.includes("/pages/")
+  ? "../assets/"
+  : "./assets/";
 
-// Cargar tema guardado
+// Cargar tema
 if (localStorage.getItem("theme") === "dark") {
   document.body.classList.add("dark");
 }
 
-// Toggle
+updateIcon();
+
 btn.addEventListener("click", () => {
   document.body.classList.toggle("dark");
 
@@ -14,4 +19,14 @@ btn.addEventListener("click", () => {
   } else {
     localStorage.setItem("theme", "light");
   }
+
+  updateIcon();
 });
+
+function updateIcon() {
+  if (document.body.classList.contains("dark")) {
+    icon.src = `${assetsPath}light-icon.png`;
+  } else {
+    icon.src = `${assetsPath}dark-icon.png`;
+  }
+}

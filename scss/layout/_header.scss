@@ -8,6 +8,20 @@
     flex-shrink: 0;
     margin-left: 10px;
   }
+  #toggle {
+    position: absolute;
+    right: 80px;
+    top: 10px;
+    background: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    #theme-icon{
+      width: 50px;
+      height: 50px;
+    }
+  }
   .navbar-toggler {
     background-color: variables.$bg-light;
     &:hover {
@@ -17,7 +31,7 @@
   }
   .nav-link {
     color: variables.$bg-light;
-    &:hover{
+    &:hover {
       color: variables.$secondary-color;
     }
   }

@@ -39,7 +39,6 @@
     transform: translateY(-50%);
     font-size: 1rem;
     color: variables.$primary-color;
-
   }
 
   .form-control:focus {
@@ -55,3 +54,21 @@
     background-color: variables.$secondary-color;
   }
 }
+
+body.dark .form-control {
+  background-color: variables.$dark-bg-color;
+  color: variables.$bg-light;
+  border: 1px solid variables.$dark-boder-color;
+}
+body.dark .form-label {
+  background: variables.$dark-bg-color;
+  color: variables.$bg-light;
+}
+body.dark .form-control:focus + .form-label{
+  color: variables.$bg-light;
+}
+
+body.dark #submit-btn{
+  border: 1px solid variables.$secondary-color;
+}
+
