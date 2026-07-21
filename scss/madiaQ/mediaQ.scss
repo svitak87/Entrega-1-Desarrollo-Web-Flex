@@ -1,3 +1,4 @@
+@use "../utilities/mixins";
 @media (min-width: 768px) {
   .grid-container {
     display: flex;
@@ -16,6 +17,15 @@
   }
   .image-section {
     width: 70%;
+  }
+  .service-image-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    .service-layout-image {
+      width: 500px;
+    }
   }
 }
 
@@ -42,5 +52,12 @@
   .proyect-img {
     width: 100%;
     display: block;
+  }
+  .portfolio-card-grid {
+    grid-template-columns: repeat(auto-fit, minmax(231px, 1fr));
+    .portfolio-card {
+      @include mixins.card();
+      height: 100%;
+    }
   }
 }

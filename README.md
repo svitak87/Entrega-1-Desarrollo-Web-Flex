@@ -71,6 +71,9 @@ Entrega-1-Desarrollo-Web-Flex/
 │   ├── servicios.html
 │   └── sobreMi.html
 │
+├── script/
+│   └── script.js   
+│ 
 ├── scss/
 │   ├── base/
 │   │   ├── _base.scss
