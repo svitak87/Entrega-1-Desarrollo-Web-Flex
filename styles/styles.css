@@ -261,6 +261,10 @@ body.dark #submit-btn {
   height: 100%;
 }
 
+.portfolio-proyects-section {
+  display: none;
+}
+
 body.dark .portfolio-card {
   background: hsl(215, 21%, 11%);
   color: hsl(0, 0%, 95%);
@@ -298,6 +302,70 @@ body.dark .portfolio-card {
     width: 500px;
   }
 }
+@media (min-width: 820px) {
+  .proyects-main-container {
+    width: 100%;
+  }
+  .portfolio-proyects-section {
+    display: block;
+    width: 100%;
+  }
+  .portfolio-proyects-section .portfolio-proyects-card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.2rem;
+    padding: 30px;
+    perspective: 1000px;
+  }
+  .portfolio-proyects-section .portfolio-proyects-card-grid .portfolio-proyect-card {
+    position: relative;
+    height: 350px;
+    cursor: pointer;
+  }
+  .portfolio-proyects-section .portfolio-proyects-card-grid .portfolio-proyect-card .card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  .portfolio-proyects-section .portfolio-proyects-card-grid .portfolio-proyect-card:hover .card-inner {
+    transform: rotateY(180deg);
+  }
+  .portfolio-proyects-section .portfolio-proyects-card-grid .portfolio-proyect-card .card-face {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 15px;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+  }
+  .portfolio-proyects-section .portfolio-proyects-card-grid .portfolio-proyect-card .card-front {
+    background: hsl(0, 0%, 100%);
+    color: hsl(209, 86%, 6%);
+  }
+  body.dark .portfolio-proyects-section .portfolio-proyects-card-grid .portfolio-proyect-card .card-front {
+    background: hsl(215, 21%, 11%);
+    color: hsl(0, 0%, 100%);
+  }
+  .portfolio-proyects-section .portfolio-proyects-card-grid .portfolio-proyect-card .card-back {
+    transform: rotateY(180deg);
+    overflow: hidden;
+  }
+  .portfolio-proyects-section .portfolio-proyects-card-grid .portfolio-proyect-card .card-back img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+  }
+  .carousel {
+    display: none;
+  }
+}
 @media (min-width: 820px) and (min-height: 1180px) {
   .grid-container {
     align-items: center;
@@ -308,17 +376,6 @@ body.dark .portfolio-card {
   }
 }
 @media (min-width: 1024px) {
-  .carousel {
-    width: 700px;
-    margin: 2rem auto;
-  }
-  .carousel-item {
-    width: 700px;
-  }
-  .proyect-img {
-    width: 100%;
-    display: block;
-  }
   .portfolio-card-grid {
     grid-template-columns: repeat(auto-fit, minmax(231px, 1fr));
   }

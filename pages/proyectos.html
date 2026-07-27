@@ -9,7 +9,7 @@
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
-     <link
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
@@ -24,7 +24,7 @@
           <a class="navbar-brand" href="../index.html">
             <img src="../assets/logo.png" alt="logo-developers" class="logo" />
           </a>
-           <button id="toggle">
+          <button id="toggle">
             <img
               id="theme-icon"
               src="../assets/light-icon.png"
@@ -65,11 +65,11 @@
       </nav>
     </header>
 
-    <main>
+    <main class="proyects-main-container">
       <section>
         <h1 class="animate__animated animate__bounceInRight">Mis trabajos</h1>
         <h2 class="animate__animated animate__bounceInRight">
-          Estos son algunos de los trabajos que he realizado como desarrollador
+          Estos son algunos de los trabajos que he realizado como desarrollador:
         </h2>
         <div id="carouselExampleCaptions" class="carousel slide">
           <div class="carousel-indicators">
@@ -159,6 +159,69 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </button>
+        </div>
+      </section>
+
+      <section class="portfolio-proyects-section">
+        <div class="portfolio-proyects-card-grid">
+          <article class="portfolio-proyect-card">
+            <div class="card-inner">
+              <div class="card-face card-front">
+                <h2>E-commerce</h2>
+                <p>
+                  Tienda online desarrollada con React y Node.js que permite a
+                  los usuarios explorar productos, agregarlos al carrito de
+                  compras y realizar pedidos.
+                </p>
+              </div>
+
+              <div class="card-face card-back">
+                <img
+                  src="../assets/renné-renné-le-filmer.png"
+                  alt="Proyecto E-commerce"
+                />
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio-proyect-card">
+            <div class="card-inner">
+              <div class="card-face card-front">
+                <h2>Blog Personal</h2>
+                <p>
+                  Un blog personal desarrollado con React y Node.js que permite
+                  compartir artículos y experiencias.
+                </p>
+              </div>
+
+              <div class="card-face card-back">
+                <img
+                  src="../assets/renné-renné-le-filmer.png"
+                  alt="Proyecto Blog Personal"
+                />
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio-proyect-card">
+            <div class="card-inner">
+              <div class="card-face card-front">
+                <h2>Sistema de Subida de Archivos (PERN Stack)</h2>
+                <p>
+                  Un sistema de subida de archivos desarrollado con la pila PERN
+                  (PostgreSQL, Express, React, Node.js) que permite a los
+                  usuarios cargar y gestionar sus archivos de manera eficiente.
+                </p>
+              </div>
+
+              <div class="card-face card-back">
+                <img
+                  src="../assets/renné-renné-le-filmer.png"
+                  alt="Sistema de Subida de Archivos"
+                />
+              </div>
+            </div>
+          </article>
         </div>
       </section>
     </main>
