@@ -35,6 +35,9 @@
    .proyects-main-container {
     width: 100%;
   }
+   .carousel {
+    display: none;
+  }
   .portfolio-proyects-section {
     display: block;
     width: 100%;
@@ -103,9 +106,6 @@
         }
       }
     }
-  }
-  .carousel {
-    display: none;
   }
 }
 

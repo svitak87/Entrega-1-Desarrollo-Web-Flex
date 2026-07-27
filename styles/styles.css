@@ -241,8 +241,16 @@ body.dark #submit-btn {
   padding: 0;
 }
 
-.carousel-inner {
+.proyects-main-container {
+  width: 100%;
+}
+
+.carousel {
   margin-top: 100px;
+}
+
+.portfolio-proyects-section {
+  display: none;
 }
 
 .portfolio-card-grid {
@@ -259,10 +267,6 @@ body.dark #submit-btn {
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
   height: 100%;
-}
-
-.portfolio-proyects-section {
-  display: none;
 }
 
 body.dark .portfolio-card {
@@ -305,6 +309,9 @@ body.dark .portfolio-card {
 @media (min-width: 820px) {
   .proyects-main-container {
     width: 100%;
+  }
+  .carousel {
+    display: none;
   }
   .portfolio-proyects-section {
     display: block;
@@ -361,9 +368,6 @@ body.dark .portfolio-card {
     height: 100%;
     object-fit: cover;
     border-radius: inherit;
-  }
-  .carousel {
-    display: none;
   }
 }
 @media (min-width: 820px) and (min-height: 1180px) {
