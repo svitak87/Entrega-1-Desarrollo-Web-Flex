@@ -10,7 +10,14 @@
   margin: 40px auto;
   .portfolio-card {
     @include mixins.card();
+    position: relative;
     height: 100%;
+    .service-icon{
+      position: absolute;
+      right: 15px;
+      bottom:  10px;
+      font-size: 1.5rem;
+    }
   }
 }
 

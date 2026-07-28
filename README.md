@@ -83,12 +83,13 @@ Entrega-1-Desarrollo-Web-Flex/
 │   │   └── _services.scss
 │   │
 │   ├── layout/
-│   │   ├── _carousel.scss
 │   │   ├── _contact.scss
 │   │   ├── _footer.scss
 │   │   ├── _header.scss
 │   │   ├── _image.scss
 │   │   └── _skills.scss
+│   │   └── _intro.scss
+│   │   └── _proyects.scss
 │   ├── mediaQ/
         ├── _mediaQ.scss
 │   ├── utilities/

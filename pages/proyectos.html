@@ -13,6 +13,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
     <link rel="stylesheet" href="../styles/styles.css" />
     <title>Proyectos - Oscar Fajardo</title>
   </head>
@@ -69,7 +73,7 @@
       <section>
         <h1 class="animate__animated animate__fadeInUp">Mis trabajos</h1>
         <h2 class="animate__animated animate__fadeInUp">
-          Estos son algunos de los trabajos que he real
+          Estos son algunos de los trabajos que he realizado:
         <div id="carouselExampleCaptions" class="carousel slide">
           <div class="carousel-indicators">
             <button
@@ -95,38 +99,49 @@
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active">
+               <div class="git-hub-icon-container">
+                <a href="https://github.com/svitak87/OhMyDoggie" target="_blank">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
               <img
-                src="../assets/renné-renné-le-filmer.png"
+                src="../assets/ohh-my-doggie-app.webp"
                 class="proyect-img d-block w-100"
                 alt="..."
               />
               <div class="carousel-caption d-none d-md-block">
-                <h1>E-comerce</h1>
-                <p>
-                  Tienda online desarrollada con React y Node.js que permite a
-                  los usuarios explorar productos, agregarlos al carrito de
-                  compras y realizar pedidos. Incluye gestión de inventario,
-                  autenticación de usuarios y panel de administración..
-                </p>
+                <h1>Turnos y Tienda Oh my Dogggie</h1>
+                  <p>
+                      Plataforma web desarrollada para una veterinaria que permite a los usuarios solicitar turnos online y comprar alimento para perros de forma rápida y segura. Incluye gestión de productos, reservas de turnos, autenticación de usuarios y una interfaz intuitiva para mejorar la experiencia del cliente.
+                  </p>
               </div>
             </div>
             <div class="carousel-item">
+              <div class="git-hub-icon-container">
+                <a href="https://github.com/svitak87/User-Authentication" target="_blank">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
               <img
-                src="../assets/renné-renné-le-filmer.png"
+                src="../assets/auth-system-app.webp"
                 class="proyect-img d-block w-100"
                 alt="..."
               />
               <div class="carousel-caption d-none d-md-block">
-                <h1>Blog Personal</h1>
+                <h1>Sistema de Autenticación Full Stack</h1>
                 <p>
-                  Un blog personal desarrollado con React y Node.js que permite
-                  compartir artículos y experiencias.
+                   Aplicación Full Stack desarrollada con React, Node.js, Express y MySQL que implementa un sistema completo de autenticación y autorización de usuarios. Incluye registro, inicio y cierre de sesión, autenticación mediante JWT, protección de rutas, cifrado de contraseñas con bcrypt y gestión segura de sesiones para garantizar el acceso controlado a la aplicación.
                 </p>
               </div>
             </div>
             <div class="carousel-item">
+              <div class="git-hub-icon-container">
+                <a href="https://github.com/svitak87/Flashbox-Rapipago" target="_blank">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
               <img
-                src="../assets/renné-renné-le-filmer.png"
+                src="../assets/document-intake-app.webp"
                 class="proyect-img d-block w-100"
                 alt="..."
               />
@@ -135,7 +150,7 @@
                 <p>
                   Un sistema de subida de archivos desarrollado con la pila PERN
                   (PostgreSQL, Express, React, Node.js) que permite a los
-                  usuarios cargar y gestionar sus archivos de manera eficiente.
+                  usuarios cargar y gestionar sus archivos de manera eficiente, para postularse Flashbox Logística-Rapipago.
                 </p>
               </div>
             </div>
@@ -146,6 +161,7 @@
             data-bs-target="#carouselExampleCaptions"
             data-bs-slide="prev"
           >
+          <i class="fa-solid fa-chevron-left carousel-arrow"></i>
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
           </button>
@@ -155,6 +171,7 @@
             data-bs-target="#carouselExampleCaptions"
             data-bs-slide="next"
           >
+          <i class="fa-solid fa-chevron-right carousel-arrow"></i>
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </button>
@@ -166,17 +183,20 @@
           <article class="portfolio-proyect-card">
             <div class="card-inner">
               <div class="card-face card-front">
-                <h2>E-commerce</h2>
-                <p>
-                  Tienda online desarrollada con React y Node.js que permite a
-                  los usuarios explorar productos, agregarlos al carrito de
-                  compras y realizar pedidos.
-                </p>
+                 <h1 class="card-front-title">Turnos y Tienda Oh my Dogggie</h1>
+                  <p>
+                      Plataforma web desarrollada para una veterinaria que permite a los usuarios solicitar turnos online y comprar alimento para perros de forma rápida y segura. Incluye gestión de productos, reservas de turnos, autenticación de usuarios y una interfaz intuitiva para mejorar la experiencia del cliente.
+                  </p>
               </div>
 
               <div class="card-face card-back">
+                 <div class="git-hub-icon-container">
+                <a href="https://github.com/svitak87/OhMyDoggie" target="_blank">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
                 <img
-                  src="../assets/renné-renné-le-filmer.png"
+                  src="../assets/ohh-my-doggie-app.webp"
                   alt="Proyecto E-commerce"
                 />
               </div>
@@ -186,16 +206,20 @@
           <article class="portfolio-proyect-card">
             <div class="card-inner">
               <div class="card-face card-front">
-                <h2>Blog Personal</h2>
+                 <h1 class="card-front-title">Sistema de Autenticación Full Stack</h1>
                 <p>
-                  Un blog personal desarrollado con React y Node.js que permite
-                  compartir artículos y experiencias.
+                   Aplicación Full Stack desarrollada con React, Node.js, Express y MySQL que implementa un sistema completo de autenticación y autorización de usuarios. Incluye registro, inicio y cierre de sesión, autenticación mediante JWT, protección de rutas, cifrado de contraseñas con bcrypt y gestión segura de sesiones para garantizar el acceso controlado a la aplicación.
                 </p>
               </div>
 
               <div class="card-face card-back">
+                <div class="git-hub-icon-container">
+                <a href="https://github.com/svitak87/User-Authentication" target="_blank">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
                 <img
-                  src="../assets/renné-renné-le-filmer.png"
+                  src="../assets/auth-system-app.webp"
                   alt="Proyecto Blog Personal"
                 />
               </div>
@@ -205,17 +229,22 @@
           <article class="portfolio-proyect-card">
             <div class="card-inner">
               <div class="card-face card-front">
-                <h2>Sistema de Subida de Archivos (PERN Stack)</h2>
+                <h1 class="card-front-title">Sistema de Subida de Archivos (PERN Stack)</h1>
                 <p>
                   Un sistema de subida de archivos desarrollado con la pila PERN
                   (PostgreSQL, Express, React, Node.js) que permite a los
-                  usuarios cargar y gestionar sus archivos de manera eficiente.
+                  usuarios cargar y gestionar sus archivos de manera eficiente, para postularse Flashbox Logística-Rapipago.
                 </p>
               </div>
 
               <div class="card-face card-back">
+                <div class="git-hub-icon-container">
+                <a href="https://github.com/svitak87/Flashbox-Rapipago" target="_blank">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
                 <img
-                  src="../assets/renné-renné-le-filmer.png"
+                  src="../assets/document-intake-app.webp"
                   alt="Sistema de Subida de Archivos"
                 />
               </div>

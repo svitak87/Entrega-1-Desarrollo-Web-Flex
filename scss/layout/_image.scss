@@ -5,21 +5,26 @@
   width: 100%;
   padding: 1rem;
   .profile-image {
+   
     width: 100%;
     max-width: 500px;
     margin: 0;
     .layout-image {
       display: block;
-      width: 100%;
+      width: 50%;
       height: auto;
-      border-radius: 8px;
     }
     figcaption {
-      margin-top: 0.75rem;
-      text-align: center;
-      font-size: 0.9rem;
+      margin-top: 0.30rem;
+      text-align: left;
+      font-size: 0.7rem;
     }
   }
+}
+
+.about-me-img{
+  width: 100%;
+  border-radius: 15px;
 }
 
 .service-image-section {
