@@ -73,12 +73,14 @@
 
           transition: transform 0.8s;
           transform-style: preserve-3d;
+          .cards-title{
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 50px;
+          }
           .card-front{
             display: flex;
             text-align: start;
-            .card-front-title{
-              font-size: 2rem;
-            }
           }
         }
 

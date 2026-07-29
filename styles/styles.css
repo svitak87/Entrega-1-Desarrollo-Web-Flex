@@ -332,6 +332,10 @@ body.dark #submit-btn {
   bottom: 10px;
   font-size: 1.5rem;
 }
+.portfolio-card-grid .portfolio-card .cards-title {
+  font-size: 2rem;
+  font-weight: 700;
+}
 
 body.dark .portfolio-card {
   background: hsl(215, 21%, 11%);
@@ -413,12 +417,14 @@ body.dark .portfolio-card {
     transition: transform 0.8s;
     transform-style: preserve-3d;
   }
+  .portfolio-proyects-section .portfolio-proyects-card-grid .portfolio-proyect-card .card-inner .cards-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 50px;
+  }
   .portfolio-proyects-section .portfolio-proyects-card-grid .portfolio-proyect-card .card-inner .card-front {
     display: flex;
     text-align: start;
-  }
-  .portfolio-proyects-section .portfolio-proyects-card-grid .portfolio-proyect-card .card-inner .card-front .card-front-title {
-    font-size: 2rem;
   }
   .portfolio-proyects-section .portfolio-proyects-card-grid .portfolio-proyect-card:hover .card-inner {
     transform: rotateY(180deg);
