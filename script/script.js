@@ -25,8 +25,8 @@ btn.addEventListener("click", () => {
 
 function updateIcon() {
   if (document.body.classList.contains("dark")) {
-    icon.src = `${assetsPath}light-icon.png`;
+    icon.src = `${assetsPath}light-icon.webp`;
   } else {
-    icon.src = `${assetsPath}dark-icon.png`;
+    icon.src = `${assetsPath}dark-icon.webp`;
   }
 }
