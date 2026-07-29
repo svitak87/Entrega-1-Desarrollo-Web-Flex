@@ -61,9 +61,9 @@ https://svitak87.github.io/Entrega-1-Desarrollo-Web-Flex/index.html
 Entrega-1-Desarrollo-Web-Flex/
 │
 ├── assets/
-│   ├── logo.png
-│   ├── renné-renné-le-filmer.png
-│   └── vista-previa-portafolio.png
+│   ├── images
+│ 
+│   
 │
 ├── pages/
 │   ├── contacto.html
